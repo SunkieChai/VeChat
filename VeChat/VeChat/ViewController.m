@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XMPPHelper.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"123");
     NSLog(@"456");
+    
+    [XMPPManager shareManager];
 }
 
 
