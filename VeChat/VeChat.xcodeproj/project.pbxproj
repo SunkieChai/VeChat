@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F6C80C8C6B9A33BA212A0C /* Pods_VeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D5DE132AC10E301C3F19C /* Pods_VeChat.framework */; };
+		6435074A200C8226006EBDE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64350749200C8226006EBDE9 /* main.m */; };
+		6435074D200C8226006EBDE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6435074C200C8226006EBDE9 /* AppDelegate.m */; };
+		64350750200C8226006EBDE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6435074F200C8226006EBDE9 /* ViewController.m */; };
+		64350753200C8226006EBDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64350751200C8226006EBDE9 /* Main.storyboard */; };
+		64350755200C8226006EBDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64350754200C8226006EBDE9 /* Assets.xcassets */; };
+		64350758200C8226006EBDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64350756200C8226006EBDE9 /* LaunchScreen.storyboard */; };
+		64350763200C8226006EBDE9 /* VeChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64350762200C8226006EBDE9 /* VeChatTests.m */; };
+		6435076E200C8226006EBDE9 /* VeChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6435076D200C8226006EBDE9 /* VeChatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6435075F200C8226006EBDE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6435073D200C8226006EBDE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64350744200C8226006EBDE9;
+			remoteInfo = VeChat;
+		};
+		6435076A200C8226006EBDE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6435073D200C8226006EBDE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64350744200C8226006EBDE9;
+			remoteInfo = VeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64350745200C8226006EBDE9 /* VeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64350749200C8226006EBDE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6435074B200C8226006EBDE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6435074C200C8226006EBDE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6435074E200C8226006EBDE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6435074F200C8226006EBDE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64350752200C8226006EBDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64350754200C8226006EBDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64350757200C8226006EBDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64350759200C8226006EBDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6435075E200C8226006EBDE9 /* VeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64350762200C8226006EBDE9 /* VeChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeChatTests.m; sourceTree = "<group>"; };
+		64350764200C8226006EBDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64350769200C8226006EBDE9 /* VeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6435076D200C8226006EBDE9 /* VeChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeChatUITests.m; sourceTree = "<group>"; };
+		6435076F200C8226006EBDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668D5DE132AC10E301C3F19C /* Pods_VeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90F690F8C78E290D12B953D /* Pods-VeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeChat.release.xcconfig"; path = "../Pods/Target Support Files/Pods-VeChat/Pods-VeChat.release.xcconfig"; sourceTree = "<group>"; };
+		AE0C986E0CC382CC611E8CF6 /* Pods-VeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeChat.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-VeChat/Pods-VeChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64350742200C8226006EBDE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6C80C8C6B9A33BA212A0C /* Pods_VeChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6435075B200C8226006EBDE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64350766200C8226006EBDE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6435073C200C8226006EBDE9 = {
+			isa = PBXGroup;
+			children = (
+				64350747200C8226006EBDE9 /* VeChat */,
+				64350761200C8226006EBDE9 /* VeChatTests */,
+				6435076C200C8226006EBDE9 /* VeChatUITests */,
+				64350746200C8226006EBDE9 /* Products */,
+				97B23626A5FC0DFB46B4D48F /* Pods */,
+				FD2FD53A24CEC7975E4A655D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64350746200C8226006EBDE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64350745200C8226006EBDE9 /* VeChat.app */,
+				6435075E200C8226006EBDE9 /* VeChatTests.xctest */,
+				64350769200C8226006EBDE9 /* VeChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64350747200C8226006EBDE9 /* VeChat */ = {
+			isa = PBXGroup;
+			children = (
+				6435074B200C8226006EBDE9 /* AppDelegate.h */,
+				6435074C200C8226006EBDE9 /* AppDelegate.m */,
+				6435074E200C8226006EBDE9 /* ViewController.h */,
+				6435074F200C8226006EBDE9 /* ViewController.m */,
+				64350751200C8226006EBDE9 /* Main.storyboard */,
+				64350754200C8226006EBDE9 /* Assets.xcassets */,
+				64350756200C8226006EBDE9 /* LaunchScreen.storyboard */,
+				64350759200C8226006EBDE9 /* Info.plist */,
+				64350748200C8226006EBDE9 /* Supporting Files */,
+			);
+			path = VeChat;
+			sourceTree = "<group>";
+		};
+		64350748200C8226006EBDE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64350749200C8226006EBDE9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64350761200C8226006EBDE9 /* VeChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				64350762200C8226006EBDE9 /* VeChatTests.m */,
+				64350764200C8226006EBDE9 /* Info.plist */,
+			);
+			path = VeChatTests;
+			sourceTree = "<group>";
+		};
+		6435076C200C8226006EBDE9 /* VeChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6435076D200C8226006EBDE9 /* VeChatUITests.m */,
+				6435076F200C8226006EBDE9 /* Info.plist */,
+			);
+			path = VeChatUITests;
+			sourceTree = "<group>";
+		};
+		97B23626A5FC0DFB46B4D48F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0C986E0CC382CC611E8CF6 /* Pods-VeChat.debug.xcconfig */,
+				A90F690F8C78E290D12B953D /* Pods-VeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD2FD53A24CEC7975E4A655D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				668D5DE132AC10E301C3F19C /* Pods_VeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64350744200C8226006EBDE9 /* VeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64350772200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChat" */;
+			buildPhases = (
+				C5141472A0D3E24BAAE65D78 /* [CP] Check Pods Manifest.lock */,
+				64350741200C8226006EBDE9 /* Sources */,
+				64350742200C8226006EBDE9 /* Frameworks */,
+				64350743200C8226006EBDE9 /* Resources */,
+				9B80DFE637229F6A7421B4CF /* [CP] Embed Pods Frameworks */,
+				A0355EAD1D546F010B4E26BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeChat;
+			productName = VeChat;
+			productReference = 64350745200C8226006EBDE9 /* VeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6435075D200C8226006EBDE9 /* VeChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64350775200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChatTests" */;
+			buildPhases = (
+				6435075A200C8226006EBDE9 /* Sources */,
+				6435075B200C8226006EBDE9 /* Frameworks */,
+				6435075C200C8226006EBDE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64350760200C8226006EBDE9 /* PBXTargetDependency */,
+			);
+			name = VeChatTests;
+			productName = VeChatTests;
+			productReference = 6435075E200C8226006EBDE9 /* VeChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64350768200C8226006EBDE9 /* VeChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64350778200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChatUITests" */;
+			buildPhases = (
+				64350765200C8226006EBDE9 /* Sources */,
+				64350766200C8226006EBDE9 /* Frameworks */,
+				64350767200C8226006EBDE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6435076B200C8226006EBDE9 /* PBXTargetDependency */,
+			);
+			name = VeChatUITests;
+			productName = VeChatUITests;
+			productReference = 64350769200C8226006EBDE9 /* VeChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6435073D200C8226006EBDE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = csj;
+				TargetAttributes = {
+					64350744200C8226006EBDE9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JUYMA4H86P;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					6435075D200C8226006EBDE9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JUYMA4H86P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64350744200C8226006EBDE9;
+					};
+					64350768200C8226006EBDE9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JUYMA4H86P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64350744200C8226006EBDE9;
+					};
+				};
+			};
+			buildConfigurationList = 64350740200C8226006EBDE9 /* Build configuration list for PBXProject "VeChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6435073C200C8226006EBDE9;
+			productRefGroup = 64350746200C8226006EBDE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64350744200C8226006EBDE9 /* VeChat */,
+				6435075D200C8226006EBDE9 /* VeChatTests */,
+				64350768200C8226006EBDE9 /* VeChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64350743200C8226006EBDE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64350758200C8226006EBDE9 /* LaunchScreen.storyboard in Resources */,
+				64350755200C8226006EBDE9 /* Assets.xcassets in Resources */,
+				64350753200C8226006EBDE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6435075C200C8226006EBDE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64350767200C8226006EBDE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B80DFE637229F6A7421B4CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-VeChat/Pods-VeChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-VeChat/Pods-VeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0355EAD1D546F010B4E26BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-VeChat/Pods-VeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5141472A0D3E24BAAE65D78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64350741200C8226006EBDE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64350750200C8226006EBDE9 /* ViewController.m in Sources */,
+				6435074D200C8226006EBDE9 /* AppDelegate.m in Sources */,
+				6435074A200C8226006EBDE9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6435075A200C8226006EBDE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64350763200C8226006EBDE9 /* VeChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64350765200C8226006EBDE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6435076E200C8226006EBDE9 /* VeChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64350760200C8226006EBDE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64350744200C8226006EBDE9 /* VeChat */;
+			targetProxy = 6435075F200C8226006EBDE9 /* PBXContainerItemProxy */;
+		};
+		6435076B200C8226006EBDE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64350744200C8226006EBDE9 /* VeChat */;
+			targetProxy = 6435076A200C8226006EBDE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64350751200C8226006EBDE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64350752200C8226006EBDE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64350756200C8226006EBDE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64350757200C8226006EBDE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64350770200C8226006EBDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64350771200C8226006EBDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64350773200C8226006EBDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0C986E0CC382CC611E8CF6 /* Pods-VeChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		64350774200C8226006EBDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90F690F8C78E290D12B953D /* Pods-VeChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		64350776200C8226006EBDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeChat.app/VeChat";
+			};
+			name = Debug;
+		};
+		64350777200C8226006EBDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeChat.app/VeChat";
+			};
+			name = Release;
+		};
+		64350779200C8226006EBDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VeChat;
+			};
+			name = Debug;
+		};
+		6435077A200C8226006EBDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = JUYMA4H86P;
+				INFOPLIST_FILE = VeChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VeChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64350740200C8226006EBDE9 /* Build configuration list for PBXProject "VeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64350770200C8226006EBDE9 /* Debug */,
+				64350771200C8226006EBDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64350772200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64350773200C8226006EBDE9 /* Debug */,
+				64350774200C8226006EBDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64350775200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64350776200C8226006EBDE9 /* Debug */,
+				64350777200C8226006EBDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64350778200C8226006EBDE9 /* Build configuration list for PBXNativeTarget "VeChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64350779200C8226006EBDE9 /* Debug */,
+				6435077A200C8226006EBDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6435073D200C8226006EBDE9 /* Project object */;
+}

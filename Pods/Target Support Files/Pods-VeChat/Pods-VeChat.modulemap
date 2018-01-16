@@ -1,0 +1,6 @@
+framework module Pods_VeChat {
+  umbrella header "Pods-VeChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
