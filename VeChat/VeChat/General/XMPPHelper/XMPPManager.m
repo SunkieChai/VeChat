@@ -11,8 +11,17 @@
 #import "XMPPStream.h"
 #import "XMPPReconnect.h"
 #import "XMPPJID.h"
+#import "XMPPRoster.h"
+#import "XMPPRosterCoreDataStorage.h"
 
 static XMPPManager *manager;
+
+@interface XMPPManager ()
+
+//xmpp链接流
+@property (nonatomic, strong) XMPPStream *stream;
+
+@end
 
 @implementation XMPPManager
 
@@ -36,21 +45,29 @@ static XMPPManager *manager;
     ServerConfig *serverConfig = [[ServerConfig alloc] init];
     
     //初始化XMPP流
-    XMPPStream *stream = [[XMPPStream alloc] init];
-    stream.hostName = serverConfig.serverHost;
-    stream.hostPort = [serverConfig.serverHost intValue];
-    stream.myJID = [XMPPJID jidWithString:@"chai"];
+    self.stream = [[XMPPStream alloc] init];
+    self.stream.hostName = serverConfig.serverHost;
+    self.stream.hostPort = [serverConfig.serverHost intValue];
+    self.stream.myJID = [XMPPJID jidWithString:@"anonymous@xmpp.jp"];
     //添加代理
-    [stream addDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
+    [self.stream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     //创建重连
     XMPPReconnect *reconnect = [[XMPPReconnect alloc] init];
     reconnect.autoReconnect = YES;
     reconnect.reconnectTimerInterval = 3;
+    [reconnect activate:self.stream];
+    
+    //自动获取花名册
+    XMPPRosterCoreDataStorage *storage = [XMPPRosterCoreDataStorage sharedInstance];
+    XMPPRoster *roster = [[XMPPRoster alloc] initWithRosterStorage:storage dispatchQueue:dispatch_get_main_queue()];
+    roster.autoFetchRoster = YES;
+    roster.autoAcceptKnownPresenceSubscriptionRequests = YES;
+    [roster activate:self.stream];
     
     //链接
     NSError *error;
-    if ([stream connectWithTimeout:10 error:&error]) {
+    if ([self.stream connectWithTimeout:10 error:&error]) {
         NSLog(@".....");
     }
 }

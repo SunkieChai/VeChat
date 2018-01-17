@@ -8,7 +8,7 @@
 
 #import "ServerConfig.h"
 
-static NSString *host = @"www.sunkiechat.com";
+static NSString *host = @"www.xmpp.jp";
 
 static NSString *port = @"5222";
 
