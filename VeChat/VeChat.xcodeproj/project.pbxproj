@@ -133,6 +133,9 @@
 		29B4CA6C200E3E42002E3C2E /* Func */ = {
 			isa = PBXGroup;
 			children = (
+				29B4CA77200F9047002E3C2E /* Login */,
+				29B4CA78200F9047002E3C2E /* Registry */,
+				29B4CA79200F9047002E3C2E /* Roaster */,
 			);
 			path = Func;
 			sourceTree = "<group>";
@@ -142,6 +145,35 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		29B4CA77200F9047002E3C2E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		29B4CA78200F9047002E3C2E /* Registry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registry;
+			sourceTree = "<group>";
+		};
+		29B4CA79200F9047002E3C2E /* Roaster */ = {
+			isa = PBXGroup;
+			children = (
+				29B4CA7A200F9047002E3C2E /* RosterStorage */,
+			);
+			path = Roaster;
+			sourceTree = "<group>";
+		};
+		29B4CA7A200F9047002E3C2E /* RosterStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RosterStorage;
 			sourceTree = "<group>";
 		};
 		6435073C200C8226006EBDE9 = {

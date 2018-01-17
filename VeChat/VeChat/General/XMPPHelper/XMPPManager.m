@@ -21,6 +21,12 @@ static XMPPManager *manager;
 //xmpp链接流
 @property (nonatomic, strong) XMPPStream *stream;
 
+//自动重连对象
+@property (nonatomic, strong) XMPPReconnect *reconnect;
+
+//花名册对象
+@property (nonatomic, strong) XMPPRoster *roaster;
+
 @end
 
 @implementation XMPPManager
@@ -53,22 +59,22 @@ static XMPPManager *manager;
     [self.stream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     //创建重连
-    XMPPReconnect *reconnect = [[XMPPReconnect alloc] init];
-    reconnect.autoReconnect = YES;
-    reconnect.reconnectTimerInterval = 3;
-    [reconnect activate:self.stream];
+    self.reconnect = [[XMPPReconnect alloc] init];
+    self.reconnect.autoReconnect = YES;
+    self.reconnect.reconnectTimerInterval = 3;
+    [self.reconnect activate:self.stream];
     
     //自动获取花名册
     XMPPRosterCoreDataStorage *storage = [XMPPRosterCoreDataStorage sharedInstance];
-    XMPPRoster *roster = [[XMPPRoster alloc] initWithRosterStorage:storage dispatchQueue:dispatch_get_main_queue()];
-    roster.autoFetchRoster = YES;
-    roster.autoAcceptKnownPresenceSubscriptionRequests = YES;
-    [roster activate:self.stream];
+    self.roaster = [[XMPPRoster alloc] initWithRosterStorage:storage dispatchQueue:dispatch_get_main_queue()];
+    self.roaster.autoFetchRoster = YES;
+    self.roaster.autoAcceptKnownPresenceSubscriptionRequests = YES;
+    [self.roaster addDelegate:self delegateQueue:dispatch_get_main_queue()];
+    [self.roaster activate:self.stream];
     
     //链接
     NSError *error;
     if ([self.stream connectWithTimeout:10 error:&error]) {
-        NSLog(@".....");
     }
 }
 
@@ -78,6 +84,14 @@ static XMPPManager *manager;
 
 - (void)xmppStreamDidConnect:(XMPPStream *)sender{
     NSLog(@"链接成功");
+    NSError *error;
+    if ([sender authenticateWithPassword:@"123456" error:&error]) {
+        if (!error) {
+            NSLog(@"正在验证...");
+        } else {
+            NSLog(@"%@",error);
+        }
+    }
 }
 
 - (void)xmppStreamConnectDidTimeout:(XMPPStream *)sender{
@@ -88,4 +102,29 @@ static XMPPManager *manager;
     NSLog(@"断开链接");
     NSLog(@"%@",error);
 }
+
+- (void)xmppStreamDidAuthenticate:(XMPPStream *)sender{
+    NSLog(@"验证成功...");
+    //发送上线现状态
+    XMPPPresence *presence = [XMPPPresence presenceWithType:@"available"];
+    [sender sendElement:presence];
+    [self.roaster fetchRoster];
+}
+
+- (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(NSXMLElement *)error{
+    NSLog(@"验证失败...");
+}
+
+
+//获取到一个好友节点
+- (void)xmppRoster:(XMPPRoster *)sender didRecieveRosterItem:(NSXMLElement *)item{
+    NSLog(@"%@",[item stringValue]);
+}
+
+//获取完好友列表
+- (void)xmppRosterDidEndPopulating:(XMPPRoster *)sender{
+    NSLog(@"获取完好友列表");
+}
+
+
 @end

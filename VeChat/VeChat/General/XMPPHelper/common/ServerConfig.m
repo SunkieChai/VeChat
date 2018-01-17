@@ -8,11 +8,18 @@
 
 #import "ServerConfig.h"
 
-static NSString *host = @"www.sunkiechat.com";
+//static NSString *host = @"www.sunkiechat.com";
+//
+//static NSString *port = @"5222";
+//
+//static NSString *jid = @"chai@sunkiechat.com";
+
+
+static NSString *host = @"www.vetech.store";
 
 static NSString *port = @"5222";
 
-static NSString *jid = @"anonymous@sunkiechat.com";
+static NSString *jid = @"8400@vetech.store";
 
 @implementation ServerConfig
 
