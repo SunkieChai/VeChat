@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		23F6C80C8C6B9A33BA212A0C /* Pods_VeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D5DE132AC10E301C3F19C /* Pods_VeChat.framework */; };
+		29B4CA70200E3E78002E3C2E /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4CA6F200E3E78002E3C2E /* XMPPManager.m */; };
+		29B4CA75200E3FD3002E3C2E /* ServerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4CA74200E3FD3002E3C2E /* ServerConfig.m */; };
 		6435074A200C8226006EBDE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64350749200C8226006EBDE9 /* main.m */; };
 		6435074D200C8226006EBDE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6435074C200C8226006EBDE9 /* AppDelegate.m */; };
 		64350750200C8226006EBDE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6435074F200C8226006EBDE9 /* ViewController.m */; };
@@ -36,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29B4CA6E200E3E78002E3C2E /* XMPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPManager.h; sourceTree = "<group>"; };
+		29B4CA6F200E3E78002E3C2E /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
+		29B4CA71200E3F07002E3C2E /* XMPPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMPPHelper.h; sourceTree = "<group>"; };
+		29B4CA72200E3F1D002E3C2E /* macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		29B4CA73200E3FD3002E3C2E /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
+		29B4CA74200E3FD3002E3C2E /* ServerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConfig.m; sourceTree = "<group>"; };
+		29B4CA76200E427B002E3C2E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		64350745200C8226006EBDE9 /* VeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64350749200C8226006EBDE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6435074B200C8226006EBDE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +92,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B4CA68200E3E42002E3C2E /* Function */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		29B4CA69200E3E42002E3C2E /* General */ = {
+			isa = PBXGroup;
+			children = (
+				29B4CA6A200E3E42002E3C2E /* XMPPHelper */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		29B4CA6A200E3E42002E3C2E /* XMPPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				29B4CA71200E3F07002E3C2E /* XMPPHelper.h */,
+				29B4CA6E200E3E78002E3C2E /* XMPPManager.h */,
+				29B4CA6F200E3E78002E3C2E /* XMPPManager.m */,
+				29B4CA6B200E3E42002E3C2E /* common */,
+				29B4CA6C200E3E42002E3C2E /* Func */,
+				29B4CA6D200E3E42002E3C2E /* Utils */,
+			);
+			path = XMPPHelper;
+			sourceTree = "<group>";
+		};
+		29B4CA6B200E3E42002E3C2E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				29B4CA72200E3F1D002E3C2E /* macro.h */,
+				29B4CA73200E3FD3002E3C2E /* ServerConfig.h */,
+				29B4CA74200E3FD3002E3C2E /* ServerConfig.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		29B4CA6C200E3E42002E3C2E /* Func */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Func;
+			sourceTree = "<group>";
+		};
+		29B4CA6D200E3E42002E3C2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		6435073C200C8226006EBDE9 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +169,8 @@
 		64350747200C8226006EBDE9 /* VeChat */ = {
 			isa = PBXGroup;
 			children = (
+				29B4CA68200E3E42002E3C2E /* Function */,
+				29B4CA69200E3E42002E3C2E /* General */,
 				6435074B200C8226006EBDE9 /* AppDelegate.h */,
 				6435074C200C8226006EBDE9 /* AppDelegate.m */,
 				6435074E200C8226006EBDE9 /* ViewController.h */,
@@ -125,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				64350749200C8226006EBDE9 /* main.m */,
+				29B4CA76200E427B002E3C2E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -364,7 +428,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B4CA70200E3E78002E3C2E /* XMPPManager.m in Sources */,
 				64350750200C8226006EBDE9 /* ViewController.m in Sources */,
+				29B4CA75200E3FD3002E3C2E /* ServerConfig.m in Sources */,
 				6435074D200C8226006EBDE9 /* AppDelegate.m in Sources */,
 				6435074A200C8226006EBDE9 /* main.m in Sources */,
 			);
@@ -519,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JUYMA4H86P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VeChat/PrefixHeader.pch";
 				INFOPLIST_FILE = VeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChat;
@@ -533,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JUYMA4H86P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VeChat/PrefixHeader.pch";
 				INFOPLIST_FILE = VeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunkiechat.VeChat;
