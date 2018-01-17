@@ -8,9 +8,11 @@
 
 #import "ServerConfig.h"
 
-static NSString *host = @"www.xmpp.jp";
+static NSString *host = @"www.sunkiechat.com";
 
 static NSString *port = @"5222";
+
+static NSString *jid = @"anonymous@sunkiechat.com";
 
 @implementation ServerConfig
 
@@ -25,6 +27,7 @@ static NSString *port = @"5222";
     if (self) {
         self.serverHost = host;
         self.serverPort = port;
+        self.defaultJid = jid;
     }
     return self;
 }

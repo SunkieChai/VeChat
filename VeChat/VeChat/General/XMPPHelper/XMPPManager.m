@@ -47,8 +47,8 @@ static XMPPManager *manager;
     //初始化XMPP流
     self.stream = [[XMPPStream alloc] init];
     self.stream.hostName = serverConfig.serverHost;
-    self.stream.hostPort = [serverConfig.serverHost intValue];
-    self.stream.myJID = [XMPPJID jidWithString:@"anonymous@xmpp.jp"];
+    self.stream.hostPort = [serverConfig.serverPort intValue];
+    self.stream.myJID = [XMPPJID jidWithString:serverConfig.defaultJid];
     //添加代理
     [self.stream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     

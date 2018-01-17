@@ -20,4 +20,10 @@
  */
 @property (nonatomic, copy) NSString *serverPort;
 
+/**
+ 默认链接JID,为匿名anonymous@sunkiechat.com
+ */
+@property (nonatomic, copy) NSString *defaultJid;
+
+
 @end
