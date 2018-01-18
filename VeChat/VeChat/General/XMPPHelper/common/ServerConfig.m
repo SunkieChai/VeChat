@@ -15,7 +15,7 @@
 //static NSString *jid = @"chai@sunkiechat.com";
 
 
-static NSString *host = @"www.vetech.store";
+static NSString *host = @"vetech.store";
 
 static NSString *port = @"5222";
 
